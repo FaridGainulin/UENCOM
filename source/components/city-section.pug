@@ -1,0 +1,19 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__doc-1(src="images/city-section-doc-1.png" loading="lazy" width="107" height="209" alt="icon")
+      img.city-section__doc-2(src="images/city-section-doc-2.png" loading="lazy" width="387" height="488" alt="icon")
+      img.city-section__logo(src="images/city-section-logo.png" loading="lazy" width="678" height="148" alt="icon")
+      h1.city-section__title.font-w-bold.font-s-45.text-up
+        | Начните свой бизнес 
+        br
+        span.city-section__title-mark прямо сейчас
+      .city-section__sub-title.font-s-32
+        | Проверьте, свободен ли ваш город 
+        br
+        | для работы по франшизе
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Введите город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш номер")
+        button.btn(type="submit") Проверить город

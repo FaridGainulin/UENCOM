@@ -1,0 +1,77 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+      h2.steps-section__title.font-w-bold.font-s-45
+        span.color-white 8 простых шагов 
+        | для запуска вашего бизнеса
+      .steps-section__box
+        .swiper-bullet
+          .steps-section__cards.swiper-wrapper
+            .steps-section__card.swiper-slide
+              .steps-section__card-num.font-w-bold.text-up 1 шаг
+              .font-s-16
+                | Заключаем договор 
+                br
+                | франшизы
+            .steps-section__card.swiper-slide.steps-card-order-3
+              .steps-section__card-num.font-w-bold.text-up 2 шаг
+              .font-s-16
+                | Ищем помещение и 
+                br
+                | подписываем 
+                br
+                | договор аренды
+            .steps-section__card.swiper-slide.steps-card-order-5
+              .steps-section__card-num.font-w-bold.text-up 3 шаг
+              .font-s-16
+                | Осуществляем поиск 
+                br
+                | персонала
+            .steps-section__card.swiper-slide.steps-card-order-7
+              .steps-section__card-num.font-w-bold.text-up 4 шаг
+              .font-s-16
+                | Проводим ремонт и 
+                br
+                | оформляем помещение
+            .steps-section__card.swiper-slide.steps-card-order-2
+              .steps-section__card-num.font-w-bold.text-up 5 шаг
+              .font-s-16
+                | Производим заказ, 
+                br
+                | доставку и монтаж 
+                br
+                | оборудования и мебели
+            .steps-section__card.swiper-slide.steps-card-order-4
+              .steps-section__card-num.font-w-bold.text-up 6 шаг
+              .font-s-16
+                | Проводим обучение 
+                br
+                | персонала
+            .steps-section__card.swiper-slide.steps-card-order-6
+              .steps-section__card-num.font-w-bold.text-up 7 шаг
+              .font-s-16
+                | Формируем первичные 
+                br
+                | запасы товара и расходных 
+                br
+                | материалов
+            .steps-section__card.swiper-slide.steps-card-order-8
+              .steps-section__card-num.font-w-bold.text-up 8 шаг
+              .font-s-16
+                | Открываем точку и 
+                br
+                | начинаем зарабатывать
+          .bullet-pagination
+      img.steps-section__img(src="images/steps-section-img.png" loading="lazy" width="778" height="898" alt="image")
+      .steps-section__bottom
+        .font-w-bold.font-s-32.text-up Сделайте первый шаг
+        .steps-section__bottom-text.font-s-20
+          | Просто укажите название вашего города 
+          br
+          | и получите список удачных локаций
+        img.steps-section__bottom-img(src="images/steps-section-bottom-img.png" loading="lazy" width="1206" height="902" alt="image")
+        form.steps-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Введите город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш номер")
+          button.btn(type="submit") Проверить город

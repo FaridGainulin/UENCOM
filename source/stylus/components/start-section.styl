@@ -1,0 +1,187 @@
+.start-section
+  background-image: url('../images/start-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #95E0FF
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0 0
+    color: #EDFAFF
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 30px 0 30px 0
+    +above($breakpoints.md)
+      padding 60px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 90px 0 98px 0
+
+  &__sub-title
+    color: #0C8FC6
+    background-color #EDFAFF
+    border-radius: 10px
+    display: flex
+    justify-content center
+    align-items: center
+    width 240px
+    height: 36px
+    margin 10px auto 15px
+    +above($breakpoints.sm)
+      margin 10px 0 30px 0
+      width 366px
+      height: 30px
+    +above($breakpoints.md)
+      margin 10px 0 40px 0
+      border-radius: 15px
+      width 485px
+      height: 36px
+    +above($breakpoints.xxl)
+      margin 10px 0 50px 0
+      width 531px
+      height: 39px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 20px 10px
+    +above($breakpoints.md)
+      gap: 20px 20px
+    +above($breakpoints.xxl)
+      gap: 40px 70px
+
+  &__card
+    width 280px !important
+    height: 88px
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      align-items: flex-start
+      width: 150px !important;
+      height: 118px;
+    +above($breakpoints.md)
+      width: 190px !important;
+      height: 160px;
+    +above($breakpoints.xxl)
+      width 211px !important
+      height: 185px
+
+  &__card-title
+    color: #CAEFFF
+    padding-bottom 8px
+    +above($breakpoints.sm)
+      padding-bottom 12px
+    +above($breakpoints.md)
+      padding-bottom 15px
+    +above($breakpoints.xxl)
+      padding-bottom 17px
+
+  &__card-line
+    width 117px
+    height: 2px
+    margin 8px 0
+    background-color #EDFAFF
+
+  &__card-text
+    line-height 118% !important
+
+  &__bottom
+    position relative
+    width 100%
+    padding 15px 10px
+    color: #121111
+    background-color #FFF8F5
+    border-radius: 10px
+    +above($breakpoints.sm)
+      margin-top 30px
+      width 488px
+      padding 20px 10px 15px 15px
+    +above($breakpoints.md)
+      margin-top 35px
+      border-radius: 15px
+      padding 30px 10px 20px 20px
+      width 585px
+    +above($breakpoints.xxl)
+      margin-top 40px
+      padding 35px 10px 26px 25px
+      width 675px
+      height: 250px
+
+  &__bottom-icon
+    position: absolute
+    top: 10px
+    right: 10px
+    width 25px
+    height: 25px
+    +above($breakpoints.sm)
+      top: 15px
+      right: 15px
+      width 35px
+      height: 35px
+    +above($breakpoints.md)
+      top: 20px
+      right: 20px
+      width 40px
+      height: 40px
+    +above($breakpoints.xxl)
+      top: 26px
+      right: 25px
+      width 45px
+      height: 45px
+
+  &__bottom-logo
+    width 110px
+    height: auto
+    +above($breakpoints.sm)
+      width 120px
+    +above($breakpoints.md)
+      width 150px
+    +above($breakpoints.xxl)
+      width 170px
+
+  &__bottom-title
+    padding 10px 0
+    +above($breakpoints.sm)
+      padding 12px 0
+    +above($breakpoints.md)
+      padding 16px 0
+    +above($breakpoints.xxl)
+      padding 20px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 150px !important
+      +above($breakpoints.md)
+        width 180px !important
+      +above($breakpoints.xxl)
+        width 205px !important
+
+  &__img
+    width 280px
+    height: auto
+    +above($breakpoints.sm)
+      position: absolute
+      z-index -1
+      width: 530px;
+      bottom: 0;
+      right: -187px;
+    +above($breakpoints.md)
+      width: 739px;
+      bottom: 0;
+      right: -234px;
+    +above($breakpoints.xxl)
+      width 939px
+      bottom: 0
+      right: -304px

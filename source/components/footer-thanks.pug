@@ -1,0 +1,12 @@
+footer.footer
+  .wrapper
+    .footer__container
+      .footer__brand-block
+        img.footer__logo(src="images/logo.png" loading="lazy" width="304" height="250" alt="logo")
+        .footer__block.font-w-medium.font-s-18 © МЯГКИЙ СЛОН, 2024
+      a.footer__privacy.font-s-15(href="#" data-remodal-target="privacy").agree-privacy Политика конфиденциальности
+      .footer__connection
+        a(href="tel:+79999999999")
+          img.footer__connection-icon(src="images/connection-icon.svg" loading="lazy" width="16" height="16" alt="icon")
+        include ../components/phone-number.pug
+        //- .footer__call-me.btn.btn--call-me(data-remodal-target="modal-form-call-me") Заказать звонок
